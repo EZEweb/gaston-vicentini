@@ -1469,6 +1469,7 @@ Responsive
 /* Medium screen : 992px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
 	.main-menu li a {
 		margin-right: 10px;
 	}
@@ -1576,7 +1577,7 @@ Responsive
 	}
 	.slicknav_nav .slicknav_row.active,
 	.slicknav_nav a.active {
-		color: #fcff18;
+		color: #05A696;
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
@@ -1593,7 +1594,7 @@ Responsive
 	}
 	.header-right {
 		float: none;
-		background: #fcff18;
+		background: #05A696;
 		text-align: center;
 	}
 	.header-right .hr-box {
