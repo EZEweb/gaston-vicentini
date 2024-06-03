@@ -51,7 +51,9 @@ h5 {
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
 }
 
 p {
@@ -72,6 +74,11 @@ select:focus,
 button:focus,
 textarea:focus {
 	outline: none;
+}
+
+.material-symbols-outlined{
+	font-size: 80px;
+	color: #505050;
 }
 
 a:hover,
@@ -310,7 +317,7 @@ Commom elements
 	padding-left: 30px;
 	font-size: 18px;
 	font-weight: 700;
-	background: #fcff18;
+	background: #05A696;
 	color: #242424;
 	cursor: pointer;
 }
@@ -338,7 +345,7 @@ Commom elements
 	border: none;
 	padding: 18px 30px;
 	margin-right: 9px;
-	background: #fcff18;
+	background: #05A696;
 	margin-bottom: 10px;
 }
 
@@ -382,16 +389,16 @@ Commom elements
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	margin-top: -32px;
+	margin-top: -40px;
 }
 
 .circle-progress .progress-info h2 {
-	font-size: 36px;
+	font-size: 32px;
 	margin-bottom: 9px;
 }
 
 .circle-progress .progress-info p {
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 0;
 	line-height: normal;
 }
@@ -433,7 +440,7 @@ Commom elements
 }
 
 .icon-box-item:hover .ib-icon {
-	background: #fcff18;
+	background: #05A696;
 }
 
 /*------------------
