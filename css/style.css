@@ -26,7 +26,7 @@ h5,
 h6 {
 	margin: 0;
 	color: #464646;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 1;
 }
 
@@ -169,11 +169,11 @@ Commom elements
 .site-btn {
 	display: inline-block;
 	border: none;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 36px;
+	font-weight: 400;
 	min-width: 228px;
-	padding: 20px 40px;
-	background: #05A696;
+	padding: 2%;
+	background: #43B9DD;
 	color: #ffffff;
 	line-height: normal;
 	cursor: pointer;
@@ -464,7 +464,7 @@ Header section
 
 .main-menu li a {
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #353535;
 	margin-right: 25px;
 	padding: 2px 13px;
@@ -475,6 +475,7 @@ Header section
 .main-menu li a.active,
 .main-menu li a:hover {
 	background: #05A696;
+	color: #fff;
 }
 
 .header-right {
@@ -483,13 +484,12 @@ Header section
 }
 
 .header-right .hr-box {
-	width: 294px;
-	padding: 31px 52px;
-	background: #05A696;
+	padding: 15% 50px;
+	background: #43B9DD;
 }
 
 .header-right .hr-box img {
-	float: left;
+	float: center;
 	margin-right: 16px;
 }
 
@@ -555,14 +555,13 @@ Add section
 }
 
 .add-text {
-	padding-left: 77px;
+	padding-left: 25%;
 }
 
 .add-text h2 {
 	font-size: 60px;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 	color: #fff;
-	margin-right: 116px;
 }
 
 .add-text h2 span {
@@ -736,9 +735,8 @@ Footer section
 }
 
 .footer-widget .fw-info-box img {
-	float: left;
-	margin-right: 12px;
-	padding-top: 7px;
+	float: center;
+	margin-bottom: 10px;
 }
 
 .footer-widget .fw-info-box p {
@@ -1320,7 +1318,7 @@ Contact page
   /* */
   
   .preguntas-frecuentes {
-	  background: #dbe0e8;
+	  background: #1F242A;
 	  position: relative;
 	  width: 100%;
 	  z-index: 89;
@@ -1331,7 +1329,7 @@ Contact page
 	padding: 4rem 1.25rem 6rem;
 	position: relative;
 	overflow: hidden;
-	width: 80%;
+	width: 60%;
   }
   
   .preguntas-frecuentes-encabezado-linea-roja {
@@ -1341,6 +1339,7 @@ Contact page
   }
   
   .preguntas-frecuentes h1 {
+	color: #fff;
 	text-align: center;
   }
   
@@ -1475,7 +1474,7 @@ Responsive
 	}
 	.header-right .hr-box {
 		width: 240px;
-		padding: 31px 20px;
+		padding: 15% 20px;
 	}
 	.hero-text h2 {
 		font-size: 80px;
@@ -1594,14 +1593,14 @@ Responsive
 	}
 	.header-right {
 		float: none;
-		background: #05A696;
+		background: #43B9DD;
 		text-align: center;
 	}
 	.header-right .hr-box {
 		padding: 20px 52px;
 		margin: 0 auto;
 		max-width: 294px;
-		text-align: left;
+		text-align: center;
 	}
 	.hero-section {
 		height: auto;
