@@ -17,6 +17,63 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.card {
+    overflow: hidden;
+	margin: 0 5%;
+    width: 25%; /* Cada tarjeta ocupa el 20% del contenedor en desktop */
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+	border: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h4{
+	padding: 10% 0;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* En móviles, cada tarjeta ocupa el 100% del contenedor */
+		margin: 0;
+    }
+}
 
 h1,
 h2,
@@ -1390,11 +1447,11 @@ Contact page
 Responsive
  ---------------------*/
 
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1176px;
+	@media (min-width: 1200px) {
+		.container {
+			max-width: 1176px;
+		}
 	}
-}
 
 /* Medium screen : 992px. */
 
@@ -1594,6 +1651,10 @@ Responsive
 	.sidebar {
 		padding-top: 50px;
 	}
+	.card {
+        width: 100%; /* En móviles, cada tarjeta ocupa el 100% del contenedor */
+		margin: 0;
+    }
 }
 
 /* Small Mobile :320px. */

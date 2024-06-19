@@ -120,6 +120,50 @@
 	</section>
 	<!-- Trainers section end -->
 
+	<section class="trainers-section">
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>Nuestras programaciones</h2>
+			</div>
+			<div class="carousel-container">
+				<div class="cards-container">
+					<div class="card">
+						<img src="img/trainers/1.jpg" alt="Strength">
+						<h4>Body House</h4>
+						<p>Ponte en movimiento con Body House, un programa diseñado para mejorar tu fuerza, capacidad cardiovascular y Fortaleza mental.<br><b>Elementos Mínimos necesarios:</b> <br>2 Dumbells, 1 bastón, 1 banda circular, 1 banda deresistencia, 1 banco plano, 1 soga para saltar.</p>
+					</div>
+					<div class="card">
+						<img src="img/trainers/3.jpg" alt="Strength & Conditioning">
+						<h4>Fuerza</h4>
+						<p>Utilizando una combinación de entrenamiento de fuerza e hipertrofia, este programa te permitirá aumentar la fuerza y la masa muscular magra.</p>
+					</div>
+					<div class="card">
+						<img src="img/trainers/2.jpg" alt="HIIT">
+						<h4>Fuerza y acondicionamiento</h4>
+						<p>Enfocado en el entrenamiento metabólico, Fuerza y Acondicionamiento te ayudará a mejorar la fuerza, resistencia y capacidad cardiovascular. </p>
+					</div>
+					<div class="card">
+						<img src="img/trainers/1.jpg" alt="Functional Mobility">
+						<h4>Fuerza localizada</h4>
+						<p>Con el foco puesto en Glúteos, piernas y abdominales, esta programación te permitirá aumentar el tono muscular y la masa muscular magra. </p>
+					</div>
+					<div class="card">
+						<img src="img/trainers/4.jpg" alt="Cardio">
+						<h4>Movilidad</h4>
+						<p>La movilidad es la capacidad de una articulación para moverse activamente a través de un rango de movimiento.</p>
+					</div>
+					<div class="card">
+						<img src="img/trainers/1.jpg" alt="Strength">
+						<h4>Body House</h4>
+						<p>Ponte en movimiento con Body House, un programa diseñado para mejorar tu fuerza, capacidad cardiovascular y Fortaleza mental.<br><b>Elementos Mínimos necesarios:</b> <br>2 Dumbells, 1 bastón, 1 banda circular, 1 banda deresistencia, 1 banco plano, 1 soga para saltar.</p>
+					</div>
+				</div>
+				<div class="controls prev" onclick="changeSlide(-1)">&#10094;</div>
+				<div class="controls next" onclick="changeSlide(1)">&#10095;</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Feature section -->
 	<section class="feature-section">
 		<div class="container">
@@ -222,8 +266,6 @@
 	</section>
 	<!-- Milestones section end -->
 
-	
-
 	<!-- Question frecuents -->
 	<section class="preguntas-frecuentes clearfix">	
 		<div class="preguntas-frecuentes-contenedor serif">
@@ -315,6 +357,34 @@
 	<!-- Footer section end -->
 									
 	<!--====== Javascripts & Jquery ======-->
+	<script>
+        let slideIndex = 0;
+        const cardsContainer = document.querySelector('.cards-container');
+        const cards = document.querySelectorAll('.card');
+
+        function showSlide(index) {
+            const totalSlides = cards.length;
+            const slidesPerView = window.innerWidth <= 768 ? 1 : 4;
+            if (index >= totalSlides) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = totalSlides - slidesPerView;
+            } else {
+                slideIndex = index;
+            }
+            const offset = -slideIndex * 100 / slidesPerView;
+            cardsContainer.style.transform = `translateX(${offset}%)`;
+        }
+
+        function changeSlide(n) {
+            showSlide(slideIndex + n);
+        }
+
+        window.addEventListener('resize', () => showSlide(slideIndex));
+
+        // Inicializar
+        showSlide(slideIndex);
+    </script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
